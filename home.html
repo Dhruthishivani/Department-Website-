@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Webpage</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #003366;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .header h1 {
+            color: #FFFFFF;
+            font-size: 36px;
+            margin: 0;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .content-box {
+            flex: 1 0 300px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            background-color: #F5F5F5;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content-box h2 {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .content-box p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #003366;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #00558C;
+        }
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://vvce.ac.in/wp-content/uploads/2020/01/VVCE-overview-1024x381-1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: black;
+        }
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .hero-content p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .parent-container {
+    position: relative;
+}
+.right-content {
+    position: absolute;
+    color: #FFFFFF;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+}
+.header a {
+    float:left;
+    display:block;
+    color:azure;
+    text-align:center;
+    padding:12px;
+    text-decoration:none;
+    font: size 15px;
+}
+.slideshow {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: slideShow 12s infinite;
+  opacity: 0;
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 8s;
+}
+
+@keyframes slideShow {
+  0% {opacity: 0;}
+  8% {opacity: 1;}
+  33% {opacity: 1;}
+  41% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+<h1>VIDYAVARDHAKA COLLEGE OF ENGINEERING</h1>
+<img src="https://vvce.ac.in/wp-content/themes/vvce/images/vvce-logo-white.png" height="100%" position="left">
+</div>
+<div class="header">
+<a href="staff.html">STAFF DETAILS</a>
+<a href="TIME TABLE.html">TIMETABLE & SYLLABUS</a>
+<a href="depart.html">DEPARTMENT ACTIVITIES</a>
+<a href="ach.html">DEPARTMENT ACHIEVEMENTS</a>
+<a href="clubs.html">COMMITTEE & CLUBS</a>
+<a href="sports.html">SPORTS</a>
+<a href="place.html">PLACEMENTS</a>
+<a href="result.html">RESULTS</a>
+<a href="FEED.html">FEEDBACK</a>
+</div>
+        <div class="parent-container">
+        
+            <div class="right-content">
+               CONTACT US  SUPPORT
+
+
+            </div>
+        
+    </div>
+    <div class="hero-image">
+        <div class="hero-content">
+            <h1>Department of Information Science & Engineering</h1>
+            <p>A leader in art and design education</p>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-box">
+            <h2>About</h2>
+            <p>THE DEPARTMENT OF INFORMATION SCIENCE & ENGINEERING
+                IS FOR STUDENTS...
+                who are innovative thinkers, who want to master the world of technology. Students should have strong mathematical and analytical skills to understand how digital technologies can be used as drivers of innovation. This course is for those who are looking for a cutting-edge exploration of programming, mathematics, and analytics to create the out-of-the-box designs and digital technologies necessary to drive innovation across borders and sectors.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+        <div class="content-box">
+            <h2>LATEST UPDATES</h2>
+            
+        <div class="slideshow">
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8GR6HB4MGhFyovaxPLMQstZIFQw3UT7vz3Q&usqp=CAU "  >
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5qVId6wJpGZ4rD28lES0bxtHw5qN2MhUj2Q&usqp=CAU "  >
+            </div>
+            <div class="slide">
+                <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKX4Dojyt_i2mBgfsBc8MXKdgVo_ooffHSQA&usqp=CAU" >
+            </div>
+          </div>
+            <p>latest updates of our department</p>
+</div>
+</div>
+</body>
+</html>
